@@ -1,117 +1,100 @@
 # PASS — Smart Proximity-Based Connection App
 
-PASS helps you connect instantly with people around you — **no phone numbers, no awkward asks**.  
-Using a smart radar system, PASS lets you send secure connection requests and share only what you choose, when you choose.
+PASS helps people connect instantly with others nearby without phone numbers or awkward introductions.
+Using a radar-based discovery model, PASS enables secure, consent-driven connections while giving users full control over what they share and when they share it.
 
-PASS is a modern, **privacy-first mobile application** designed for real-world connections without exposing personal contact details upfront.
-
----
-
-## 🧠 Problem Statement
-
-In real life, people often want to connect but hesitate because:
-
-- Asking for a phone number feels awkward
-- Sharing personal information upfront is risky
-- Existing social apps rely on usernames, numbers, or public profiles
-- There’s no simple way to connect **only with people nearby, in the moment**
+PASS is a modern, privacy-first mobile application designed for real-world, moment-based interactions without exposing personal contact details upfront.
 
 ---
 
-## 💡 Solution
+## Problem Statement
 
-PASS introduces a **radar-based proximity system** where users can discover nearby PASS users and send connection requests **without revealing personal information**.
+In real-world environments, people often want to connect but hesitate due to:
 
-Connections only happen when **both users explicitly accept**, ensuring privacy, consent, and full user control.
+- Awkwardness in asking for phone numbers
+- Privacy risks associated with sharing personal information upfront
+- Existing social platforms relying on usernames, numbers, or public profiles
+- The lack of a simple way to connect only with nearby people, in the moment
 
 ---
 
-## ✨ Core Features
+## Solution
 
-### 📡 Smart Radar Discovery
-- Detects nearby PASS users in real time
+PASS introduces a radar-based proximity system that allows users to discover nearby PASS users within an approximate range of around 100 meters and initiate secure connection requests without revealing personal information.
+
+Connections are established only after both users explicitly accept, ensuring privacy, consent, and user control at every step.
+
+---
+
+## Core Features
+
+### Smart Radar Discovery
+
+- Discovers nearby PASS users within an approximate 100-meter range
 - No public profiles or searchable usernames
-- Visibility is session-based, not permanent
+- Visibility is session-based and temporary
+- Precise location data is never displayed or stored
 
-### 🔐 Privacy-First Connections
+---
+
+### Privacy-First Connections
+
 - No phone numbers required
-- No email or personal info shared by default
-- Users decide **what to share and when**
-
-### 🤝 Consent-Based Requests
-- Send a connection request to a nearby user
-- The other user can accept or reject
-- Information is shared **only after acceptance**
-
-### ⚡ Real-Time Experience
-- Live radar animation for discovery
-- Instant request delivery and response
-- Smooth, low-latency interactions
-
-### 🧍 User Control
-- Turn visibility on or off anytime
-- Block or remove connections
-- Full control over shared data
+- No email or personal identifiers shared by default
+- Users control what information is shared and when
+- Location signals are processed ephemerally for discovery only
 
 ---
 
-## 🏗️ Architecture Overview
+### Consent-Based Requests
 
-### 🖥️ Frontend
-- React Native
-- Smooth animations and gesture-based interactions
-- Gen-Z focused dark UI with modern design language
-
-### 🌐 Backend
-- Secure REST APIs
-- Token-based authentication
-- Real-time communication (sockets)
-
-### 🛡️ Security
-- Encrypted communication
-- No public user identifiers
-- Session-based discovery
-- Minimal data retention
+- Users can initiate connection requests with nearby users
+- Requests must be explicitly accepted or rejected
+- Limited profile data is shared only after mutual consent
 
 ---
 
-## 🛡️ Privacy & Safety
+### Real-Time Interaction
 
-PASS is built with privacy as a **core principle**:
-
-- No background tracking
-- No selling or sharing user data
-- No public user directory
-- Users remain invisible unless they choose to be discoverable
-
-PASS follows standard mobile privacy practices and platform policies.
+- Live radar updates during discovery
+- Instant delivery of connection requests and responses
+- Low-latency, session-scoped interactions
 
 ---
 
-## 🎯 Use Cases
+### User Control
 
-- 🎓 Campus & university networking
-- 🎤 Events, meetups, and conferences
-- 🧑‍💻 Co-working spaces
-- 🤝 Casual social discovery
-- 💼 Professional introductions without pressure
+- Users can enable or disable discoverability at any time
+- Connections can be revoked by either party
+- Full control over shared data and active sessions
 
 ---
 
-## 📱 Platform Support
+## Architecture Overview
 
-- ✅ **Android** — Play Store ready
-- ⏳ **iOS** — Planned / supported
+A detailed system design and component breakdown is available in  
+[`docs/architecture.md`](docs/architecture.md).
+
+---
+## Use Cases
+
+- Campus and university networking
+- Events, meetups, and conferences
+- Co-working spaces
+- Casual social discovery
+- Professional introductions without pressure
 
 ---
 
-## 🚧 Project Status
 
-PASS is **actively developed and production-ready**, with ongoing improvements focused on:
+## Platform Support
 
-- Performance optimization
-- UX enhancements
-- Advanced privacy controls
-- Scalability for high-density environments
+- Android (Play Store ready)
+- iOS (planned and supported)
 
 ---
+
+## Product Demo
+
+See the demo video here:  
+[`demo/pass-interaction-demo.mp4`](demo/pass-interaction-demo.mp4)

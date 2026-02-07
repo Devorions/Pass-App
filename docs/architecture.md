@@ -39,11 +39,10 @@ The client does not make trust decisions independently and relies on backend val
 
 Backend services handle:
 
-- User state orchestration
-- Proximity and request coordination
-- Connection lifecycle management
-- Business logic enforcement
-- Integration with authentication and real-time layers
+- Coordination of proximity-based discovery using approximate range evaluation (e.g., ~100 meters)
+- Ephemeral processing of location signals solely for proximity checks
+- Avoidance of persistent storage of precise latitude and longitude values
+- Immediate disposal of location data after proximity evaluation is completed
 
 Services are designed to remain stateless where possible to support scalability.
 
@@ -75,7 +74,11 @@ The data layer is responsible for:
 
 - Storing user and connection metadata
 - Persisting session and request state
-- Enforcing access control boundaries
+- No persistent storage of precise geographic coordinates
+- Transient handling of location data limited to active interaction windows
+- Retention of only minimal, non-sensitive metadata required for session and connection flows
+- Automatic disposal of proximity-related location signals after use
+
 
 Sensitive data is minimized and stored only when required to support platform functionality.
 
