@@ -98,5 +98,5 @@ A detailed system design and component breakdown is available in
 
 See the demo video here:  
 
-[`View The Video`]](https://github.com/Devorions/Pass-App/issues/1)
+[`View The Video`](https://github.com/Devorions/Pass-App/issues/1)
 [`demo/pass-interaction-demo.mp4`](demo/pass-interaction-demo.mp4)
