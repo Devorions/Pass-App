@@ -98,4 +98,4 @@ A detailed system design and component breakdown is available in
 
 See the demo video here:  
 
-[`View The Video`](https://github.com/Devorions/Pass-App/issues/1)
+[`View The Video`](https://devorions.com/videos/pass-demo.mp4)
